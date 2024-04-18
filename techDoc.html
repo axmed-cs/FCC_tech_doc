@@ -8,57 +8,134 @@
 </head>
 <body>
     <div class="wrapper">
-        <nav id="nav-bar">
+        <nav id="navbar">
             <header>HTML  <br>Documentation</header>
-            <div class="divider" aria-hidden></div>
+            <div class="nav-divider" aria-hidden></div>
             <ul class="nav-list">
-                <li class="list"><a href="" class="link">HTML</a></li>
-                <li class="list"><a href="" class="link">Tags</a></li>
-                <li class="list"><a href="" class="link">Attributes</a></li>
-                <li class="list"><a href="" class="link">Content</a></li>
-                <li class="list"><a href="" class="link">CSS/JS</a></li>
+                <li class="list"><a href="#html" class="nav-link">HTML</a></li>
+                <li class="list"><a href="#tags" class="nav-link">Tags</a></li>
+                <li class="list"><a href="#attributes" class="nav-link">Attributes</a></li>
+                <li class="list"><a href="#content" class="nav-link">Content</a></li>
+                <li class="list"><a href="#css" class="nav-link">CSS</a></li>
             </ul>
             
         </nav>
+
         <main id="main-doc">
             <div class="inner-wrapper">
-                <section class="main-section" id="">
-                    <header></header>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae expedita quibusdam! Error maiores ad accusamus. Nulla ipsam dolorem aut, rem illo adipisci, non earum neque quaerat unde perspiciatis amet.
-                    Facilis modi, adipisci reprehenderit cum a voluptatum. Qui possimus hic, beatae aspernatur vero magni aliquid corporis sit quod pariatur eveniet nesciunt est numquam neque laudantium, minima dolorum. Illo, quia consequatur!
-                    Dolorum placeat quidem voluptate facere quia voluptatum alias harum possimus vero fugit excepturi ullam, asperiores vel, distinctio quisquam obcaecati est quas maxime ipsa veniam beatae vitae veritatis laborum reiciendis. Illum.
-                    Vel aliquam quod qui ipsam veniam voluptate dolor velit, ab dolore, illum iusto animi eveniet, tempora veritatis tempore iure blanditiis nam? Odio totam ipsam consectetur ducimus dolores quis veniam aliquam.
-                    Atque id sapiente eligendi sit nisi nam officia, ab velit qui, quas nesciunt eius doloribus obcaecati inventore, et repudiandae blanditiis quia laudantium laboriosam! Reiciendis autem vitae, maxime ex iusto quasi.
-                    Obcaecati accusamus temporibus quo quia asperiores minima cupiditate, minus inventore debitis, et sunt dicta numquam. Voluptatum similique eum dolor error ut odio dicta, voluptates, laudantium numquam officia impedit nemo libero.
-                    Provident, aperiam? Sapiente in magnam harum odit ipsum eum eius officia voluptatum necessitatibus omnis enim beatae quisquam, incidunt rerum, fuga doloremque a aut atque voluptate id voluptates. Illum, animi dolorem.
-                    Labore odit temporibus fuga saepe voluptate incidunt quam quas soluta! Nobis, qui inventore voluptatibus laudantium consequuntur quod impedit adipisci. Facilis minima minus commodi excepturi! Animi sit exercitationem neque praesentium maiores!
-                    Eligendi nulla nemo adipisci nam fuga, similique repudiandae quasi nesciunt voluptatum unde dolore modi in recusandae. Quam sit labore magnam necessitatibus aliquam! Earum laboriosam numquam doloremque sint molestias maxime deserunt?</p>
-                    <p></p>
-                    <code></code>
+                <section class="main-section" id="html">
+                    <header class="section-header">HTML</header>
+                    <div class="inner-divider" aria-hidden></div>
+                    <p>HyperText Markup language, or <dfn>HTML</dfn> for short, is the standard markup language for webpages.</p>
+                    <p>Below is the basic layout or "boilerplate" to get you started.</p>
+                    <pre>
+    <code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title>Document&lt;/title&gt;
+        &lt;/head&gt;
+    &lt;body&gt;
+                        
+    &lt;/body&gt;
+&lt;/html&gt;
+</code>
+                    </pre>
+                    <p>The first written line of code is not a tag but it is a declaration to the browser.</p>
+                    <code> &lt;!DOCTYPE html&gt;</code>
+                    <p>This specifies that the document type is written in html.</p> 
+                
                 </section>
-                <section class="main-section" id="">
-                    <header></header>
-                    <p></p>
-                    <p></p>
-                    <code></code>
+
+                <section class="main-section" id="tags">
+                    <header class="section-header">Tags</header>
+                    <div class="inner-divider" aria-hidden></div>
+                    <p> The first tag is the html tag. This is the root tag and is the container for all other tags used. 
+                        In this we specify what language our file is wriiten in.
+                        In our case we set it to "en" which stands for english. This tag includes it's opening tag and a closing tag.
+                    </p>
+                    <pre>
+ <code>&lt;html lang="en"&gt;
+    ...
+&lt;/html&gt;</code>
+                    </pre>
+                    <p class="space">Next we have the head tag which holds meta tags and a title tag.</p>
+                    <pre>
+<code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title>Document&lt;/title&gt;
+&lt;/head&gt;</code>
+                    </pre>
+                    <p>The meta element is part of the head section and contains the metadata, or the page description. 
+                        This is used to describe  the document. The first <span class="text-code">meta</span> tag is for 
+                        defining how the page should be encoded, in this case it is UTF-8. The second <span class="text-code">meta</span> 
+                        tag defines the viewport and its properties cause the dimensions to match width of the devices like on mobile. 
+                        This is  from the <span class="text-code">width=device-width</span>. The <span class="text-code">initial-scale=1.0</span> 
+                        is used to control the initial zoom level when the page is first loaded.
+                    </p>
+                    <p>Our tag element within the head is the <span class="text-code">title</span> tag. This tells the browser the title of the
+                        document you are creating. This is required for all HTML documents. Then we end off with our closing head tag.
+                    </p>
+                    <p> 
+                        The next tag we have is the <span class="text-code">body</span> tag. This is where the main content of the webpage or document will
+                        be written. It contains, but is not limited to, a navigation bar, sidebar, and main content.
+                    </p>
+                    <p>Finally we closing off with the closing html tag which indicates the end of the html document.</p>
+                    </section>
+
+                <section class="main-section" id="attributes">
+                    <header class="section-header">Attributes</header>
+                    <div class="inner-divider" aria-hidden></div>
+                    <p>Attributes are certain indicators that we add to tags to modify them. For example in the opening HTML tag:</p>
+                    <code> &lt;html lang="en"&gt;</code>
+                    <p>In this case the attribute is <span class="text-code">lang="en"</span>. This says that the html document is written in english. 
+                        Usually the attributes are written inside the opening tag with two parts separated by an equal sign (=).</p>
+                    <pre><code>&lt;tag attribute="value"&gt; ... &lt;/tag&gt;</code></pre>
                 </section>
-                <section class="main-section" id="">
-                    <header></header>
-                    <p></p>
-                    <p></p>
-                    <code></code>
+
+                <section class="main-section" id="content">
+                    <header class="section-header">Content</header>
+                    <div class="inner-divider" aria-hidden></div>
+                    <p>Next we have the content of the html document. This is usually written inside the <span class="text-code">body</span> tag.</p>
+                    <p>In this we can usually find a 
+                        <ul>
+                            <li><span class="text-code">nav</span> tag (short for navigation like the one on the side of this webpage)</li>
+                            <li><span class="text-code">main</span> tag</li>
+                            <li><span class="text-code">sidebar</span> tag</li>
+                            <li><span class="text-code">aside</span> tag</li>
+                            <li><span class="text-code">footer</span> tag</li>
+                        </ul>
+                    <pre>
+<code>&lt;body&gt;
+    &lt;nav&gt;
+        ...
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+        ...
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        ...
+    &lt;/footer&gt;
+&lt;/body&gt;</code>
+                    </pre>
+                    <p>These are some of the basic tags that are used for the content of a webpage.</p>
                 </section>
-                <section class="main-section" id="">
-                    <header></header>
-                    <p></p>
-                    <p></p>
-                    <code></code>
-                </section>
-                <section class="main-section" id="">
-                    <header></header>
-                    <p></p>
-                    <p></p>
-                    <code></code>
+
+                <section class="main-section" id="css">
+                    <header class="section-header">CSS</header>
+                    <div class="inner-divider" aria-hidden></div>
+                    <p>Cascading Style Sheets or <dfn>CSS</dfn> for short is a stylesheet used to style a markup language
+                    such as HTML. You would add styles targeting certain tags or attributes and then link it inside the
+                    <span class="text-code">head</span> element. For example if your css file was named "stylesheet" it
+                    would be:</p>
+                    <pre><code>&lt;link rel="stylesheet" href="stylesheet.css"&gt;</code></pre>
+                    <p>It can be used to change properties of things such as text <span class="color-example">color</span> and <span class="weight-example">weight</span>. There are many more things
+                        that css can be used for. It is important to know some css so that you are able to style your HTML document for your webpage.
+                    </p>
                 </section>
             </div>
         </main>
