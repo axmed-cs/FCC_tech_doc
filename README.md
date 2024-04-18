@@ -1,3 +1,3 @@
 # FCC_tech_doc
 
-techincal documentation of html
+techincal documentation page of html
